@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="images/png" rel="icon" href="images/icons8-youtube.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/single.css">
+  <title>Youtube </title>
+</head>
+<style>
+  #con{
+    z-index: 11;
+  }
+</style>
+
+<body>
+  <!--    header      -->
+  <header class="header">
+    <div class="header_container">
+      <div class="none"> </div>
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+
+      <div class="user">
+        <div class="icon">
+          <i class="fa-solid fa-video"></i>
+          <i class="fa-solid fa-grip"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="img">
+          <img src="logos/yt2.png" alt="">
+        </div>
+      </div>
+
+      <div class="toggle">
+        <i class="fa-solid fa-bars" id="header-toggle"></i>
+      </div>
+    </div>
+  </header>
+  <!--    header      -->
+
+  <!--    nav      -->
+  <section class="nav" id="navbar">
+    <nav class="nav_container">
+      <div>
+        <a href="#" class="nav_link nav_logo ">
+          <i class="fa-solid fa-bars nav_icon"></i>
+          <span class="logo_name">
+            <i class="fab fa-youtube"></i>
+            Youtube
+          </span>
+        </a>
+
+        <div class="nav_list">
+          <div class="nav_items navtop">
+            <a href="index.html" class="nav_link navtop active">
+              <i class="fa fa-house nav_icon"></i>
+              <span class="nav_name">Home</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa fa-compass nav_icon"></i>
+              <span class="nav_name">Explore</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-brands fa-tiktok nav_icon"></i>
+              <span class="nav_name">Short Video</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-users nav_icon"></i>
+              <span class="nav_name">Channel</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-video nav_icon"></i>
+              <span class="nav_name">Library</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-clock-rotate-left nav_icon"></i>
+              <span class="nav_name">History</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-thumbs-up nav_icon"></i>
+              <span class="nav_name">Like</span>
+            </a>
+
+            <div class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <i class="fa-solid fa-chevron-down nav_icon"></i>
+                <span class="nav_name">Show More</span>
+              </a>
+
+              <div class="nav_dropdown-collapse">
+                <div class="nav_dropdown-content">
+                  <a href="#" class="nav_dropdown-item">bb ki vines</a>
+                  <a href="#" class="nav_dropdown-item">Amit Bhadana</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="nav_link">
+              <i class="fa-solid fa-comment nav_icon"></i>
+              <span class="nav_name">Messages</span>
+            </a>
+          </div>
+
+          <div class="nav_items subscribe-container">
+            <h3 class="nav_subititle">SUBSCRIPTIONS</h3>
+
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/bbl.jpeg" alt="">
+              <span class="nav_name">bb ki vines </span>
+            </a>
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/abl.jpeg" />
+              <span class="nav_name">Amit Bhadana </span>
+            </a>
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/tseries.png" />
+              <span class="nav_name">T-series </span>
+            </a>
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/sabl.jpeg" />
+              <span class="nav_name">SAB </span>
+            </a>
+
+
+            <div class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <i class="fa-solid fa-chevron-down nav_icon"></i>
+                <span class="nav_name">Show 3 More</span>
+              </a>
+
+              <div class="nav_dropdown-collapse nav_dropdown-second">
+                <div class="nav_dropdown-content">
+                  <a href="#" class="nav_dropdown-items">
+                    <img class="subscribe" src="logos/netflix.png" />
+                    <span class="nav_name">Netflix </span>
+                  </a>
+                  <a href="#" class="nav_dropdown-items">
+                    <img class="subscribe" src="logos/mrbeastl.png" />
+                    <span class="nav_name">Mr Beast </span>
+                  </a>
+                  <a href="#" class="nav_dropdown-items">
+                    <img class="subscribe" src="logos/r2hl.jpeg" />
+                    <span class="nav_name">R2H </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--    nav      -->
+
+
+  <main class="single_pages">
+    <section class="video_items flex">
+      <div class="left">
+        <div class="left_content">
+          <video controls>
+            <source id="con" src="video/vid1.mp4" type="video/mp4" poster="data:image/jpeg;base64,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">
+          </video>
+
+          <!--        video tages            -->
+          <div class="tag">
+            <label class="tags">#T-Series #movies #Animal </label>
+            <p>one video for all  || Animal teaser || Ranbir kapoor</p>
+          </div>
+          <!--        video tages            -->
+
+          <!--        total viwer            -->
+          <div class="view flex2 border_bottom">
+            <div class="view-text">
+              <span>34M   .1 month ago</span>
+            </div>
+
+            <div class="flex">
+              <div class="icon">
+                <i class="fa fa-thumbs-up"></i>
+                <label>328k</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-thumbs-down"></i>
+                <label>DISLIKE</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-share"></i>
+                <label>SHARE</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-scissors"></i>
+                <label>CLIP</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-bookmark"></i>
+                <label>SAVE</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+          <!--        total viwer            -->
+
+
+          <!--        video details            -->
+          <div class="details flex border_bottom">
+            <div class="img">
+              <img class="logos" src="logos/tseries.png" alt="">
+            </div>
+            <div class="heading">
+              <h4>T-Series <i class="fa fa-circle-check"></i> </h4>
+              <span>243M Subscribers</span>
+              <h5>Worldwide Release on 11th August 2023
+                In Cinemas in Hindi, Telugu, Tamil, Kannada & Malayalam </h5>
+              <h5>Produced by: Bhushan Kumar, Pranay Reddy Vanga, Murad Khetani, Krishan Kumar
+                Writer, Editor, Director: Sandeep Reddy Vanga
+                Director of Photography: Amit Roy
+                Production Designer: Suresh Selvarajan
+                Action: Supreme Sundar</h5>
+              <span>Show More</span>
+            </div>
+          </div>
+          <!--        video details            -->
+
+
+
+          <!--        video comment            -->
+          <div class="comment">
+            <div class="comment-heading flex">
+              <h4>150 Comments</h4>
+              <h4> <i class="fa fa-list-ul"></i> <label>SORT BY</label> </h4>
+            </div>
+          </div>
+
+          <!--        video comment  by self           -->
+          <div class="details comment_self flex">
+            <div class="img">
+              <img class="logos" src="logos/profile.png" alt="">
+            </div>
+            <div class="heading">
+              <input type="text" placeholder="Add a comment....">
+            </div>
+          </div>
+          <!--        video comment  by other           -->
+
+          <div class="details_Comment">
+            <div class="details flex">
+              <div class="img">
+                <img class="logos" src="logos/profile.png" />
+              </div>
+              <div class="heading">
+                <h4>amit sharma<span>3 day ago</span> </h4>
+                <p>Man, the pre-teaser looks so epic, I can't just wait to see the combo of Vanga and Ranbir deliver a mind-boggling movie..</p>
+                <div class="comment-like flex">
+                  <div class="icon">
+                    <i class="fa fa-thumbs-up"></i>
+                    <label>5</label>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-thumbs-down"></i>
+                    <label>DISLIKE</label>
+                  </div>
+                  <div class="icon">
+                    <label>REPLY</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--        video comment  by other           -->
+          <div class="replay">
+            <div class="replay-details flex">
+             
+              </div>
+             
+            </div>
+          </div>
+
+
+          <!--        no replay           -->
+          <div class="details_Comment no-replay">
+            <div class="details flex">
+              <div class="img">
+                <h1>M</h1>
+              </div>
+              <div class="heading">
+                <h4>mohan <span>4 day ago</span> </h4>
+                <p> When a director like Sandeep vanga &  an actor like Ranbir Kapoor collaborates...a  masterpiece is made...🔥💯🔥</p>
+                <div class="comment-like flex">
+                  <div class="icon">
+                    <i class="fa fa-thumbs-up"></i>
+                    <label>9</label>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-thumbs-down"></i>
+                    <label>DISLIKE</label>
+                  </div>
+                  <div class="icon">
+                    <label>REPLY</label>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="details_Comment no-replay">
+            <div class="details flex">
+              <div class="img background1">
+                <h1>A</h1>
+              </div>
+              <div class="heading">
+                <h4>Ajay saxena <span>2 weeks ago</span> </h4>
+                <p> Vibe with Punjabi music is like fun with fire ❤‍🔥💥</p>
+                <div class="comment-like flex">
+                  <div class="icon">
+                    <i class="fa fa-thumbs-up"></i>
+                    <label>5</label>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-thumbs-down"></i>
+                    <label>DISLIKE</label>
+                  </div>
+                  <div class="icon">
+                    <label>REPLY</label>
+                  </div>
+                </div>
+               
+            </div>
+          </div>
+          <div class="details_Comment no-replay">
+            <div class="details flex">
+              <div class="img background2">
+                <h1>S</h1>
+              </div>
+              <div class="heading">
+                <h4>sandeep sharma <span>1 month ago</span> </h4>
+                <p> this is crazy i cant stop watching it again and again i loved it</p>
+                <div class="comment-like flex">
+                  <div class="icon">
+                    <i class="fa fa-thumbs-up"></i>
+                    <label>3</label>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-thumbs-down"></i>
+                    <label>DISLIKE</label>
+                  </div>
+                  <div class="icon">
+                    <label>REPLY</label>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="details_Comment no-replay">
+            <div class="details flex">
+              <div class="img background3">
+                <h1>v</h1>
+              </div>
+              <div class="heading">
+                <h4>vishal<span>2 day ago</span> </h4>
+                <p> Totally obsessed with the song ❤
+                </p>
+                <div class="comment-like flex">
+                  <div class="icon">
+                    <i class="fa fa-thumbs-up"></i>
+                    <label>8</label>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-thumbs-down"></i>
+                    <label>DISLIKE</label>
+                  </div>
+                  <div class="icon">
+                    <label>REPLY</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="replay">
+           
+            <div class="replay-details flex">
+              
+              
+              </div>
+              <div class="text">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="right_content">
+          <button class="chat">More videos</button>
+
+          <div class="tags">
+            <label class="tags-bg">All</label>
+            <label class="tags-bg">movies</label>
+            <label class="tags-bg">marvel</label>
+            <label class="tags-bg">music</label>
+          </div>
+
+          <div class="video_items vide_sidebar flex">
+            <a href="#">
+              <img src="images/mrbeast.jpeg" alt="">
+            </a>
+            <div class="details">
+              <p>World’s Most Expensive Car!</p>
+              <span>Mr Beast <i class="fa fa-cricle-check"> </i> </span>
+              <span>5.7M . 3 month ago</span>
+            </div>
+          </div>
+          <div class="video_items vide_sidebar flex">
+            <a href="#">
+              <img src="images/sgames.jpeg" alt="">
+            </a>
+            <div class="details">
+              <p>Squid Game | Official Trailer | Netflix</p>
+              <span>Netflix <i class="fa fa-cricle-check"> </i> </span>
+              <span>96.7M . 4 year ago</span>
+            </div>
+          </div>
+          <div class="video_items vide_sidebar flex">
+            <a href="#">
+              <img src="images/rrr.jpeg" alt="">
+            </a>
+            <div class="details">
+              <p>RRR Official Trailer (Hindi) India’s Biggest Action Drama | NTR,RamCharan,AjayD,AliaB</p>
+              <span>T-Series <i class="fa fa-cricle-check"> </i> </span>
+              <span>60.3M . 2 year ago</span>
+            </div>
+          </div>
+          <div class="video_items vide_sidebar flex">
+            <a href="#">
+              <img src="images/r2h2.jpeg" alt="">
+            </a>
+            <div class="details">
+              <p>MEN ON MISSION | MOM | Round2hell |R2Hp></p>
+              <span>R2H <i class="fa fa-cricle-check"> </i> </span>
+              <span>17M . 2 Week ago</span>
+            </div>
+          </div>
+          <div class="video_items vide_sidebar flex">
+            <a href="#">
+              <img src="images/pushpa.jpeg" alt="">
+            </a>
+            <div class="details">
+              <p>Pushpa - The Rise (Hindi) Official Trailer | Allu Arjun, Rashmika</p>
+              <span>T-Series <i class="fa fa-cricle-check"> </i> </span>
+              <span>26.3M . 1 year ago</span>
+            </div>
+          </div>
+          <div class="video_items vide_sidebar flex">
+            <a href="#">
+              <img src="images/hb2.jpeg" alt="">
+            </a>
+            <div class="details">
+              <p>Shaadi Mubarak | Harsh Beniwal</p>
+              <span>Harsh Beniwal <i class="fa fa-cricle-check"> </i> </span>
+              <span>7M . 2 year ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

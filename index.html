@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="images/png" rel="icon" href="images/icons8-youtube.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/single.css">
+
+  <title>Youtube-clone </title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #e9e9e9;
+}
+
+</style>
+
+<body>
+  <!--    header      -->
+  <header class="header">
+    <div class="header_container">
+      <div class="none"> </div>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search items...">
+        <ul id="searchResults"></ul>
+      </div>
+
+
+      <div class="user">
+        <div class="icon">
+          <i class="fa-solid fa-video"></i>
+          <i class="fa-solid fa-grip"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="img">
+          <img src="logos/yt2.png" alt="">
+        </div>
+      </div>
+
+      <div class="toggle">
+        <i class="fa-solid fa-bars" id="header-toggle"></i>
+      </div>
+    </div>
+  </header>
+  <!--    header      -->
+
+
+  <!--    nav      -->
+  <section class="nav" id="navbar">
+    <nav class="nav_container">
+      <div>
+        <a href="#" class="nav_link nav_logo ">
+          <i class="fa-solid fa-bars nav_icon"></i>
+          <span class="logo_name">
+            <i class="fab fa-youtube"></i>
+            Youtube
+          </span>
+        </a>
+
+        <div class="nav_list">
+          <div class="nav_items navtop">
+            <a href="#" class="nav_link navtop active">
+              <i class="fa fa-house nav_icon"></i>
+              <span class="nav_name">Home</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa fa-compass nav_icon"></i>
+              <span class="nav_name">Explore</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-brands fa-tiktok nav_icon"></i>
+              <span class="nav_name">Short Video</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-users nav_icon"></i>
+              <span class="nav_name">Channel</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-video nav_icon"></i>
+              <span class="nav_name">Library</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-clock-rotate-left nav_icon"></i>
+              <span class="nav_name">History</span>
+            </a>
+            <a href="#" class="nav_link navtop">
+              <i class="fa-solid fa-thumbs-up nav_icon"></i>
+              <span class="nav_name">Like</span>
+            </a>
+
+            <div class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <i class="fa-solid fa-chevron-down nav_icon"></i>
+                <span class="nav_name">Show More</span>
+              </a>
+
+              <div class="nav_dropdown-collapse">
+                <div class="nav_dropdown-content">
+                  <a href="#" class="nav_dropdown-item">bb ki vines</a>
+                  <a href="#" class="nav_dropdown-item">Amit Bhadana</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="nav_link">
+              <i class="fa-solid fa-comment nav_icon"></i>
+              <span class="nav_name">Messages</span>
+            </a>
+          </div>
+
+          <div class="nav_items subscribe-container">
+            <h3 class="nav_subititle">SUBSCRIPTIONS</h3>
+
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/bbl.jpeg" alt="">
+              <span class="nav_name">bb ki vines </span>
+            </a>
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/abl.jpeg" />
+              <span class="nav_name">Amit Bhadana </span>
+            </a>
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/tseries.png" />
+              <span class="nav_name">T-series </span>
+            </a>
+            <a href="#" class="nav_link">
+              <img class="subscribe" src="logos/sabl.jpeg" />
+              <span class="nav_name">SAB </span>
+            </a>
+
+
+            <div class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <i class="fa-solid fa-chevron-down nav_icon"></i>
+                <span class="nav_name">Show 3 More</span>
+              </a>
+
+              <div class="nav_dropdown-collapse nav_dropdown-second">
+                <div class="nav_dropdown-content">
+                  <a href="#" class="nav_dropdown-items">
+                    <img class="subscribe" src="logos/netflix.png" />
+                    <span class="nav_name">Netflix </span>
+                  </a>
+                  <a href="#" class="nav_dropdown-items">
+                    <img class="subscribe" src="logos/mrbeastl.png" />
+                    <span class="nav_name">Mr Beast </span>
+                  </a>
+                  <a href="#" class="nav_dropdown-items">
+                    <img class="subscribe" src="logos/r2hl.jpeg" />
+                    <span class="nav_name">R2H </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--    nav      -->
+
+
+  <main>
+    <section class="video_content grid">
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/sgames.jpeg" alt="">
+        </a>
+        <div  class="details flex">
+          <div  class="img">
+            <img class="logos" src="logos/netflix.png" alt="">
+          </div>
+          <div class="heading">
+            <p>Squid Game | Official Trailer | Netflix</p>
+            <span>sony <i class="fa fa-circle-check"></i> </span>
+            <span>7M .1 Week ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/animal.jpg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+           <img class="logos" src="logos/tseries.png" alt="">
+          </div>
+          <div class="heading">
+            <p>ANIMAL Pre-Teaser | Ranbir Kapoor | Sandeep Reddy </p>
+            <span>T-Series <i class="fa fa-circle-check"></i> </span>
+            <span>52M .1 Week ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/apple.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/apple.png" alt="">
+
+          </div>
+          <div class="heading">
+            <p>The new AirPods Pro | Quiet the noise | Apple</p>
+            <span>Apple <i class="fa fa-circle-check"></i> </span>
+            <span>56.7M .1 Week ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/ab1.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/abl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>Berozgaari (Berozgaar Bachelors) EP - 01 Amit Bhadana</p>
+            <span>Amit Bhadana <i class="fa fa-circle-check"></i> </span>
+            <span>7M .1 month ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/ab2.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/abl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>Paggal - Amit Bhadana - Official Full Movie</p>
+            <span>Amit Bhadana <i class="fa fa-circle-check"></i> </span>
+            <span>32M .1 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/acv.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/acvl.jpeg" alt="">
+          </div>
+          <div class="heading">
+            <p>Tuition Classes aur Bache | Ashish Chanchlani</p>
+            <span> Ashish Chanchlani <i class="fa fa-circle-check"></i> </span>
+            <span>67M .4 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/adi.jpg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/tseries.png" />
+          </div>
+          <div class="heading">
+            <p>Adipurush (Official Trailer) Hindi | Prabhas | Saif Ali Khan | Kriti Sanon | Om Raut | Bhushan Kumar</p>
+            <span>T-Series <i class="fa fa-circle-check"></i> </span>
+            <span>47M .3 Week ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/bb.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/bbl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>Bubbly Sir Ki Lockdown Life! | Angry Masterji 15 | BB Ki Vines</p>
+            <span>bb ki vines <i class="fa fa-circle-check"></i> </span>
+            <span>28M .3 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/gadar.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/zee.png" />
+          </div>
+          <div class="heading">
+            <p>Gadar 2 Teaser | In Cinemas 11th August | Sunny Deol | Ameesha Patel | Anil Sharma | Zee Studios</p>
+            <span>Zee studio <i class="fa fa-circle-check"></i> </span>
+            <span>10M .1 day ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/hb.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/hbl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>A Day With a Cringe Youtuber | Harsh Beniwal</p>
+            <span>Harsh Beniwal <i class="fa fa-circle-check"></i> </span>
+            <span>5M .1 Week ago</span>
+          </div>
+        </div>
+      </div>
+
+     <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/mahabharat.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/spl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>Mahabharat - Official Trailer | Star Plus Mahabharat | Kurukshetr</p>
+            <span>Star plus  <i class="fa fa-circle-check"></i> </span>
+            <span>6M .5 year ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/hb2.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/hbl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>Shaadi Mubarak | Harsh Beniwal</p>
+            <span>Harsh Beniwal <i class="fa fa-circle-check"></i> </span>
+            <span>7M .2 year ago</span>
+          </div>
+        </div>
+      </div>
+   
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/mrbeast.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/mrbeastl.png" />
+          </div>
+          <div class="heading">
+            <p>World’s Most Expensive Car!</p>
+            <span>Mr Beast <i class="fa fa-circle-check"></i> </span>
+            <span>5.7M .3 month ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/pushpa.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/tseries.png" />
+          </div>
+          <div class="heading">
+            <p>Pushpa - The Rise (Hindi) Official Trailer | Allu Arjun, Rashmika </p>
+            <span>T-Series <i class="fa fa-circle-check"></i> </span>
+            <span>26.3M .1 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/r2h1.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/r2hl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>AGE OF WATER | Round2Hell | R2H</p>
+            <span>R2H <i class="fa fa-circle-check"></i> </span>
+            <span>51M .9 month ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/r2h2.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/r2hl.jpeg" alt="">
+          </div>
+          <div class="heading">
+            <p>MEN ON MISSION | MOM | Round2hell |R2H </p>
+            <span>R2H  <i class="fa fa-circle-check"></i> </span>
+            <span>17M .2 Week ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/rrr.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/tseries.png" />
+          </div>
+          <div class="heading">
+            <p>RRR Official Trailer (Hindi) India’s Biggest Action Drama | NTR,RamCharan,AjayD,AliaB | SS Rajamouli</p>
+            <span>T-Series <i class="fa fa-circle-check"></i> </span>
+            <span>60.3M .2 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/bbd.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/bbl.jpeg" />
+          </div>
+          <div class="heading">
+            <p>Dhindora | Official Trailer | BB Ki Vines</p>
+            <span>bb ki vines <i class="fa fa-circle-check"></i> </span>
+            <span>63.5M .2 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/sthings.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/netflix.png" />
+          </div>
+          <div class="heading">
+            <p>Stranger Things | Official Final Trailer | Netflix</p>
+            <span>Netflix <i class="fa fa-circle-check"></i> </span>
+            <span>96.7M .4 year ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video_items">
+        <a href="single-page.html">
+          <img src="images/tmkoc.jpeg" alt="">
+        </a>
+        <div class="details flex">
+          <div class="img">
+            <img class="logos" src="logos/sabl.jpeg" alt="">
+          </div>
+          <div class="heading">
+            <p>Taarak Mehta Ka Ooltah Chashmah - तारक मेहता - Ep 3129 - Full Episode - 24th March, 2021</p>
+            <span>SAB <i class="fa fa-circle-check"></i> </span>
+            <span>5.6M .1 month ago</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="js/main.js" charset="utf-8"></script>
+  <script>
+    // Sample item data
+const items = [
+  { name: "Stranger Things | Official Final Trailer | Netflix" },
+  { name: "Item 2" ,  },
+  { name: "Item 3" },
+  { name: "Another Item" },
+  { name: "Something Else" }
+];
+
+// Get DOM elements
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
+// Function to display search results
+function displayResults(results) {
+  // Clear previous results
+  searchResults.innerHTML = "";
+
+  // Display each result as a list item
+  results.forEach(result => {
+    const li = document.createElement("li");
+    li.textContent = result.name;
+    searchResults.appendChild(li);
+  });
+}
+
+// Function to handle search
+function handleSearch() {
+  const searchTerm = searchInput.value.toLowerCase();
+  const searchResults = items.filter(item => item.name.toLowerCase().includes(searchTerm));
+  displayResults(searchResults);
+}
+
+
+// Event listener for search input
+searchInput.addEventListener("input", handleSearch);
+
+  </script>
+</body>
+
+</html>
