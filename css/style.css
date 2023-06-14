@@ -425,7 +425,7 @@ header .toggle {
 }
 
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:425px) {
   header .search {
     width: 80%;
   }
@@ -438,6 +438,24 @@ header .toggle {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     padding-left: 35px;
+    padding-right: 10px;
+  }
+
+ 
+}
+@media screen and (max-width:320px) {
+  header .search {
+    width: 80%;
+  }
+
+  header .none,
+  header .user {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
     padding-right: 10px;
   }
 
