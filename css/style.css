@@ -446,7 +446,7 @@ header .toggle {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 10px;
   }
   
