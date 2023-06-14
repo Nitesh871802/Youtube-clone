@@ -79,7 +79,7 @@ header .user img {
 }
 
 header .user i {
-  margin-right: 40px;
+  margin-right: 15px;
 }
 
 header i,
@@ -316,22 +316,10 @@ header .toggle {
 @media screen and (min-width:320px) {
  
   main {
-    padding-top: 30px;
+    padding-top: 20px;
     /* padding-right: 0%; */
     /* padding-left: 1px; */
   }
-
-}
-
-@media only screen and (min-width: 425px) {
- 
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-    
-    padding-left: 50px;
-    padding-right: 10px;
-  }
-  
 
 }
 @media only screen and (min-width: 375px) {
@@ -348,6 +336,16 @@ header .toggle {
       padding-right: 0px;
      }
   }
+
+@media only screen and (min-width: 425px) {
+ 
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  
+}
   
 
 
@@ -423,7 +421,6 @@ header .toggle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    
   }
 }
 
@@ -454,3 +451,5 @@ header .toggle {
     grid-gap: 20px;
   }
 }
+
+ 
