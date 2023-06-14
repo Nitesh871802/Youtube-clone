@@ -322,6 +322,14 @@ header .toggle {
   }
 
 }
+@media only screen and (min-width: 375px) {
+  body {
+    padding: 0px 48px 10px 96px;
+  }
+ 
+  
+
+}
 
   @media only screen and (min-width: 320px){
     .left {
@@ -409,7 +417,7 @@ header .toggle {
 
 @media screen and (max-width:420px) {
   header .search {
-    width: 70%;
+    width: 80%;
   }
 
   header .none,
@@ -419,6 +427,8 @@ header .toggle {
 
   .grid {
     grid-template-columns: repeat(1, 1fr);
+    padding-left: 25px;
+    padding-right: 10px;
   }
 
  
