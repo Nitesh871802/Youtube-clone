@@ -336,6 +336,17 @@ header .toggle {
       padding-right: 0px;
      }
   }
+
+@media only screen and (min-width: 425px) {
+ 
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  
+}
   
 
 
@@ -441,13 +452,4 @@ header .toggle {
     grid-gap: 20px;
   }
 }
-@media only screen and (min-width: 425px) {
- 
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-    
-    padding-left: 20px;
-    padding-right: 10px;
-  }
-  
-}
+
